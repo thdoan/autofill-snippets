@@ -1,2 +1,4 @@
+# Example: Monday, Jan 17, 2022 (format is region-specific)
 long_date = javascript:new Date().toLocaleDateString('en-us', { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric'})
+# Example: 1/17/2022 (format is region-specific)
 short_date = javascript:new Date().toLocaleDateString()
