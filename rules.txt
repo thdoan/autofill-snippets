@@ -1,0 +1,10 @@
+// Click <button type="submit">
+document.querySelector('[type="submit"]')?.click();
+
+==
+
+// Update value of <input name="fullname">
+let elFullName = document.querySelector('[name="fullname"]');
+if (elFullName) {
+  elFullName.value = 'Tom Smith';
+}
