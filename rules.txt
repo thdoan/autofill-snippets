@@ -8,3 +8,20 @@ let elFullName = document.querySelector('[name="fullname"]');
 if (elFullName) {
   elFullName.value = 'Tom Smith';
 }
+
+==
+
+// Put focus on <input id="username">
+document.getElementById('username')?.focus();
+
+==
+
+// Change background color to skyblue
+document.body.style.backgroundColor = 'skyblue';
+// -OR-
+document.body.setAttribute('style', 'background-color:skyblue');
+
+==
+
+// Add autocomplete="off" to <form action="/post">
+document.querySelector('form[action="/post"]')?.setAttribute('autocomplete', 'off');
