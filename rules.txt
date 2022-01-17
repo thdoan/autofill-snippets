@@ -11,8 +11,21 @@ if (elFullName) {
 
 ==
 
+// Check <input type="checkbox" name="terms">
+let elTerms = document.querySelector('[name="terms"]');
+if (elTerms) {
+  elTerms.checked = true;
+}
+
+==
+
 // Put focus on <input id="username">
 document.getElementById('username')?.focus();
+
+==
+
+// Add autocomplete="off" to <form action="/post">
+document.querySelector('form[action="/post"]')?.setAttribute('autocomplete', 'off');
 
 ==
 
@@ -20,8 +33,3 @@ document.getElementById('username')?.focus();
 document.body.style.backgroundColor = 'skyblue';
 // -OR-
 document.body.setAttribute('style', 'background-color:skyblue');
-
-==
-
-// Add autocomplete="off" to <form action="/post">
-document.querySelector('form[action="/post"]')?.setAttribute('autocomplete', 'off');
