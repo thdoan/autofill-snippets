@@ -1,0 +1,2 @@
+long_date = javascript:new Date().toLocaleDateString('en-us', { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric'})
+short_date = javascript:new Date().toLocaleDateString()
