@@ -1,4 +1,8 @@
+day = javascript:(() => { let aDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']; return aDays[new Date().getDay()] })()
+month = javascript:(() => { let aMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; return aMonths[new Date().getMonth()] })()
 # Example: Monday, January 17, 2022 (format is region-specific)
 long_date = javascript:new Date().toLocaleDateString('en-us', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'})
 # Example: 1/17/2022 (format is region-specific)
 short_date = javascript:new Date().toLocaleDateString()
+# Random alphanumeric
+rand_alphanumeric = javascript:Math.random().toString(36).slice(2)
