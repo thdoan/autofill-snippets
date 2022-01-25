@@ -1,8 +1,17 @@
+# Day of the week
 day = javascript:(() => { let aDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']; return aDays[new Date().getDay()] })()
+
+# Month name
 month = javascript:(() => { let aMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; return aMonths[new Date().getMonth()] })()
-# Example: Monday, January 17, 2022 (format is region-specific)
+
+# Long date (e.g., "Monday, January 17, 2022" - format is region-specific)
 long_date = javascript:new Date().toLocaleDateString('en-us', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'})
-# Example: 1/17/2022 (format is region-specific)
+
+# Short date (e.g., "1/17/2022" - format is region-specific)
 short_date = javascript:new Date().toLocaleDateString()
+
+# Time (e.g., "8:00:00 PM" - format is region-specific)
+time = javascript:new Date().toLocaleTimeString()
+
 # Random alphanumeric
 rand_alphanumeric = javascript:Math.random().toString(36).slice(2)
