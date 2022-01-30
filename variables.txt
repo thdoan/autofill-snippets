@@ -15,3 +15,6 @@ time = javascript:new Date().toLocaleTimeString()
 
 # Random alphanumeric
 rand_alphanumeric = javascript:Math.random().toString(36).slice(2)
+
+# Random number between 1-10
+rand_1_10 = javascript:Math.floor(Math.random()*10+1)
