@@ -32,4 +32,4 @@ document.querySelector('form[action="/post"]')?.setAttribute('autocomplete', 'of
 // Change background color to skyblue
 document.body.style.backgroundColor = 'skyblue';
 // -OR-
-document.body.setAttribute('style', 'background-color:skyblue');
+document.body.setAttribute('style', 'background-color: skyblue;');
