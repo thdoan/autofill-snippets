@@ -1,5 +1,5 @@
-# Autofill Snippets
-This is a place to share your Autofill rules, exceptions, text clips, and variables with the world.
+# Lightning Autofill Snippets
+Some useful autofill rules and variables to get you started.
 
 ## How to Contribute
 1. Click "Fork" in the top right to make a copy of this repository.
