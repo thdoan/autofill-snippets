@@ -4,7 +4,7 @@ document.querySelector('[type="submit"]')?.click();
 ==
 
 // Update value of `<input name="fullname">`
-let fullName = document.querySelector('[name="fullname"]');
+const fullName = document.querySelector('[name="fullname"]');
 if (fullName) {
   fullName.value = 'Bob Smith';
 }
@@ -12,7 +12,7 @@ if (fullName) {
 ==
 
 // Check `<input type="checkbox" name="terms">`
-let terms = document.querySelector('[name="terms"]');
+const terms = document.querySelector('[name="terms"]');
 if (terms) {
   terms.checked = true;
 }
