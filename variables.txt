@@ -1,11 +1,11 @@
 # Day of the week
-day = javascript:(() => { let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']; return days[new Date().getDay()] })()
+day = javascript:(() => { const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']; return days[new Date().getDay()] })()
 
 # Month name
-month = javascript:(() => { let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; return months[new Date().getMonth()] })()
+month = javascript:(() => { const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; return months[new Date().getMonth()] })()
 
 # Long date (e.g., "Monday, January 17, 2022" -- format is region-specific)
-long_date = javascript:new Date().toLocaleDateString('en-us', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'})
+long_date = javascript:new Date().toLocaleDateString('en-us', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
 
 # Short date (e.g., "1/17/2022" -- format is region-specific)
 short_date = javascript:new Date().toLocaleDateString()
@@ -14,10 +14,10 @@ short_date = javascript:new Date().toLocaleDateString()
 time = javascript:new Date().toLocaleTimeString()
 
 # Time-based greeting ("Good morning" before 12PM, "Good afternoon" 12-6PM, "Good evening" after 6PM)
-greeting = javascript:(() => { let hour = new Date().getHours(); return hour<12 ? 'Good morning' : (hour>=12 && hour<=18 ? 'Good afternoon' : 'Good evening') })()
+greeting = javascript:(() => { const hour = new Date().getHours(); return hour < 12 ? 'Good morning' : (hour >= 12 && hour <= 18 ? 'Good afternoon' : 'Good evening') })()
 
 # Random alphanumeric
 rand_alphanumeric = javascript:Math.random().toString(36).slice(2)
 
 # Random number between 1-10
-rand_1_10 = javascript:Math.floor(Math.random()*10+1)
+rand_1_10 = javascript:Math.floor(Math.random() * 10 + 1)
