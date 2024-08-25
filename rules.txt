@@ -1,7 +1,7 @@
 // Click `<button type="submit">` if it exists
 document.querySelector('[type="submit"]')?.click();
 
-==
+/* ========================================================================== */
 
 // Update value of `<input name="fullname">`
 const fullName = document.querySelector('[name="fullname"]');
@@ -9,7 +9,7 @@ if (fullName) {
   fullName.value = 'Bob Smith';
 }
 
-==
+/* ========================================================================== */
 
 // Check `<input type="checkbox" name="terms">`
 const terms = document.querySelector('[name="terms"]');
@@ -17,17 +17,17 @@ if (terms) {
   terms.checked = true;
 }
 
-==
+/* ========================================================================== */
 
 // Put focus on `<input id="username">` if it exists
 document.getElementById('username')?.focus();
 
-==
+/* ========================================================================== */
 
 // Add autocomplete="off" to `<form action="/post">` if it exists
 document.querySelector('form[action="/post"]')?.setAttribute('autocomplete', 'off');
 
-==
+/* ========================================================================== */
 
 // Change background color to skyblue
 document.body.style.backgroundColor = 'skyblue';
