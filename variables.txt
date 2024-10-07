@@ -16,7 +16,7 @@ time = javascript:new Date().toLocaleTimeString()
 # Time-based greeting ("Good morning" before 12PM, "Good afternoon" 12-6PM, "Good evening" after 6PM)
 greeting = javascript:(() => { const hour = new Date().getHours(); return hour < 12 ? 'Good morning' : (hour >= 12 && hour <= 18 ? 'Good afternoon' : 'Good evening') })()
 
-# Random alphanumeric
+# Random alphanumeric (e.g., "e5yk80p9x57")
 rand_alphanumeric = javascript:Math.random().toString(36).slice(2)
 
 # Random number between 1-10
